@@ -197,6 +197,10 @@
                     
                     tableHTML += `
                         <tr>
+                            <td>
+                                <button style="background: none; border: none; cursor: pointer; padding: 0 5px;" onclick="moveUp(${row.id})">🔼</button>
+                                ${row.deutsch}
+                            </td>
                             <td>${row.deutsch}</td>
                             <td>${audioPlayer}</td>
                             <td>${row.english}</td>
@@ -291,6 +295,30 @@ function addRow() {
             renderWebsite();
         }
     }
+
+    function moveUp(id) {
+    const index = vocabularyData.rows.findIndex(r => r.id === id);
+    if (index === -1) return;
+    
+    // Find the previous row belonging to the SAME heading
+    const currentHeading = vocabularyData.rows[index].heading;
+    let prevTargetIndex = -1;
+    
+    for (let i = index - 1; i >= 0; i--) {
+        if (vocabularyData.rows[i].heading === currentHeading) {
+            prevTargetIndex = i;
+            break;
+        }
+    }
+    
+    // If a valid row above it exists in the same category, swap them
+    if (prevTargetIndex !== -1) {
+        const temp = vocabularyData.rows[index];
+        vocabularyData.rows[index] = vocabularyData.rows[prevTargetIndex];
+        vocabularyData.rows[prevTargetIndex] = temp;
+        renderWebsite();
+    }
+}
 
     // Exports modified configuration block to user downloads track
     function downloadJSON() {
