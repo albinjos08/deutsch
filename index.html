@@ -202,6 +202,7 @@
                             <td>${row.english}</td>
                             <td>${row.notes || '-'}</td>
                             <td style="text-align:center;">
+                                <button class="btn-danger" onclick="deleteRow(${row.id})">Del</button>
                                 <button class="btn-edit" onclick="editNotes(${row.id})">Edit</button>
                                 <button class="btn-danger" onclick="deleteRow(${row.id})">Del</button>
                             </td>
@@ -259,6 +260,20 @@ function addRow() {
         const newNotes = prompt("Edit Notes:", row.notes);
         if (newNotes !== null) {
             row.notes = newNotes.trim();
+            renderWebsite();
+        }
+    }
+    function editWord(id) {
+        const row = vocabularyData.rows.find(r => r.id === id);
+        const newWord = prompt("Edit German Word:", row.deutsch);
+        
+        if (newWord !== null && newWord.trim() !== "") {
+            row.deutsch = newWord.trim();
+            
+            // Automatically updates the audio path to match the newly edited word
+            const cleanedWord = row.deutsch.replace(/\?/g, '');
+            row.audio = `audio/${cleanedWord}.mp3`;
+            
             renderWebsite();
         }
     }
