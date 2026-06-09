@@ -3,167 +3,270 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Deutsch</title>
+    <title>Mein Deutsch-Lernportal</title>
     <style>
         :root {
-            --bg-color: #f9f9fb;
-            --text-color: #333;
-            --primary-color: #0066cc;
+            --bg-color: #f8f9fa;
+            --text-color: #212529;
+            --primary-color: #0d6efd;
+            --success-color: #198754;
+            --danger-color: #dc3545;
             --table-bg: #ffffff;
-            --border-color: #e1e4e8;
-            --header-bg: #f1f3f5;
+            --border-color: #dee2e6;
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             background-color: var(--bg-color);
             color: var(--text-color);
-            line-height: 1.6;
             margin: 0;
             padding: 20px;
         }
 
         .container {
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 0 auto;
         }
 
-        h1 {
-            text-align: center;
-            color: #111;
+        h1 { text-align: center; margin-bottom: 30px; }
+        h2 { color: var(--primary-color); margin-top: 40px; border-bottom: 2px solid var(--border-color); padding-bottom: 8px; }
+
+        .admin-panel {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
             margin-bottom: 30px;
+            border: 1px solid var(--border-color);
         }
 
-        h2 {
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--primary-color);
-            padding-bottom: 5px;
-            margin-top: 40px;
+        .form-group {
+            display: inline-block;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            vertical-align: top;
         }
 
-        .table-container {
-            overflow-x: auto;
-            background: var(--table-bg);
-            border-radius: 6px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
+        .form-group label { display: block; font-weight: 600; font-size: 0.9rem; margin-bottom: 5px; }
+        .form-group input, .form-group select { padding: 8px; border: 1px solid var(--border-color); border-radius: 4px; min-width: 180px; }
+        
+        button {
+            padding: 9px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            color: white;
         }
+        .btn-primary { background-color: var(--primary-color); }
+        .btn-success { background-color: var(--success-color); }
+        .btn-danger { background-color: var(--danger-color); padding: 5px 10px; font-size: 0.85rem; }
+        .btn-edit { background-color: #ffc107; color: #000; padding: 5px 10px; font-size: 0.85rem; margin-right: 5px; }
+        .btn-download { background-color: #6c757d; float: right; font-size: 1rem; }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            text-align: left;
-        }
+        .table-container { overflow-x: auto; background: var(--table-bg); border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); margin-bottom: 25px; border: 1px solid var(--border-color); }
+        table { width: 100%; border-collapse: collapse; text-align: left; }
+        th, td { padding: 12px 15px; border-bottom: 1px solid var(--border-color); vertical-align: middle; }
+        th { background-color: #f1f3f5; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; }
+        
+        th:nth-child(1), td:nth-child(1) { width: 20%; font-weight: bold; }
+        th:nth-child(2), td:nth-child(2) { width: 25%; }
+        th:nth-child(3), td:nth-child(3) { width: 20%; }
+        th:nth-child(4), td:nth-child(4) { width: 20%; }
+        th:nth-child(5), td:nth-child(5) { width: 15%; text-align: center; }
 
-        th, td {
-            padding: 12px 15px;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        th {
-            background-color: var(--header-bg);
-            font-weight: 600;
-            text-transform: uppercase;
-            font-size: 0.85rem;
-            letter-spacing: 0.5px;
-        }
-
-        tr:last-child td {
-            border-bottom: none;
-        }
-
-        /* Column widths */
-        th:nth-child(1), td:nth-child(1) { width: 25%; font-weight: bold; }
-        th:nth-child(2), td:nth-child(2) { width: 20%; }
-        th:nth-child(3), td:nth-child(3) { width: 25%; }
-        th:nth-child(4), td:nth-child(4) { width: 30%; color: #666; font-size: 0.95rem; }
-
-        audio {
-            max-width: 100%;
-            height: 30px;
-        }
+        audio { height: 30px; max-width: 100%; }
+        .clearfix::after { content: ""; clear: both; display: table; }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Mein Deutsch-Lernportal</h1>
-
-    <!-- SECTION: GREETINGS -->
-    <h2>Greetings</h2>
-    <div class="table-container">
-        <table>
-            <thead>
-                <tr>
-                    <th>Deutsch</th>
-                    <th>Audio</th>
-                    <th>English</th>
-                    <th>Notes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Hallo</td>
-                    <td>
-                        <audio controls src="audio/hallo.mp3">
-                            Your browser does not support audio.
-                        </audio>
-                    </td>
-                    <td>Hello</td>
-                    <td>Casual greeting, used anytime.</td>
-                </tr>
-                <tr>
-                    <td>Guten Morgen</td>
-                    <td>
-                        <audio controls src="audio/guten_morgen.mp3">
-                            Your browser does not support audio.
-                        </audio>
-                    </td>
-                    <td>Good morning</td>
-                    <td>Used generally until 11 AM.</td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="clearfix" style="margin-bottom: 20px;">
+        <button class="btn-download" onclick="downloadJSON()">📥 Save Data Changes (Download JSON)</button>
+        <h1 style="margin: 0; text-align: left; display: inline-block;">Mein Deutsch-Lernportal</h1>
     </div>
 
-    <!-- SECTION: ESSENTIALS (Example of how to add more headings) -->
-    <h2>Essential Phrases</h2>
-    <div class="table-container">
-        <table>
-            <thead>
-                <tr>
-                    <th>Deutsch</th>
-                    <th>Audio</th>
-                    <th>English</th>
-                    <th>Notes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Bitte</td>
-                    <td>
-                        <audio controls src="audio/bitte.mp3">
-                            Your browser does not support audio.
-                        </audio>
-                    </td>
-                    <td>Please / You're welcome</td>
-                    <td>Context-dependent; versatile word.</td>
-                </tr>
-                <tr>
-                    <td>Danke</td>
-                    <td>
-                        <audio controls src="audio/danke.mp3">
-                            Your browser does not support audio.
-                        </audio>
-                    </td>
-                    <td>Thank you</td>
-                    <td>Can be shortened to "Danke sehr" for emphasis.</td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="admin-panel">
+        <h3 style="margin-top:0;">+ Add New Content</h3>
+        
+        <div style="margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px dashed var(--border-color);">
+            <div class="form-group">
+                <label for="new-heading-input">New Heading Name</label>
+                <input type="text" id="new-heading-input" placeholder="e.g., Numbers">
+            </div>
+            <button class="btn-primary" onclick="addHeading()">Create Heading Section</button>
+        </div>
+
+        <div>
+            <div class="form-group">
+                <label for="heading-select">Select Heading</label>
+                <select id="heading-select"><option value="">-- Choose Heading --</option></select>
+            </div>
+            <div class="form-group">
+                <label for="deutsch-input">Deutsch</label>
+                <input type="text" id="deutsch-input" placeholder="e.g., Danke">
+            </div>
+            <div class="form-group">
+                <label for="audio-input">Audio File Path</label>
+                <input type="text" id="audio-input" placeholder="e.g., audio/danke.mp3">
+            </div>
+            <div class="form-group">
+                <label for="english-input">English</label>
+                <input type="text" id="english-input" placeholder="e.g., Thank you">
+            </div>
+            <div class="form-group">
+                <label for="notes-input">Notes</label>
+                <input type="text" id="notes-input" placeholder="Notes">
+            </div>
+            <button class="btn-success" onclick="addRow()">Add Phrase Row</button>
+        </div>
     </div>
 
+    <div id="content-display-area"></div>
 </div>
+
+<script>
+    let vocabularyData = { headings: [], rows: [] };
+
+    // Fetch the production database file from GitHub
+    async function loadData() {
+        try {
+            const response = await fetch('data.json');
+            if (!response.ok) throw new Error('Could not find data.json');
+            vocabularyData = await response.json();
+            renderWebsite();
+        } catch (error) {
+            console.error('Error reading configuration:', error);
+            alert('Error loading data.json file. Make sure it is in the same repository folder.');
+        }
+    }
+
+    function renderWebsite() {
+        const displayArea = document.getElementById('content-display-area');
+        const selectDropdown = document.getElementById('heading-select');
+        
+        displayArea.innerHTML = '';
+        selectDropdown.innerHTML = '<option value="">-- Choose Heading --</option>';
+        
+        vocabularyData.headings.forEach(h => {
+            selectDropdown.innerHTML += `<option value="${h}">${h}</option>`;
+        });
+
+        vocabularyData.headings.forEach(heading => {
+            const currentRows = vocabularyData.rows.filter(r => r.heading === heading);
+            
+            let headingHTML = `<h2>${heading}</h2>`;
+            let tableHTML = `
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Deutsch</th>
+                                <th>Audio</th>
+                                <th>English</th>
+                                <th>Notes</th>
+                                <th style="text-align:center;">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+            `;
+
+            if (currentRows.length === 0) {
+                tableHTML += `<tr><td colspan="5" style="text-align:center; color:#999;">Empty section.</td></tr>`;
+            } else {
+                currentRows.forEach(row => {
+                    let audioPlayer = `<span style="color:#999; font-size:0.85rem;">No audio</span>`;
+                    if (row.audio) {
+                        audioPlayer = `<audio controls src="${row.audio}"></audio>`;
+                    }
+                    
+                    tableHTML += `
+                        <tr>
+                            <td>${row.deutsch}</td>
+                            <td>${audioPlayer}</td>
+                            <td>${row.english}</td>
+                            <td>${row.notes || '-'}</td>
+                            <td style="text-align:center;">
+                                <button class="btn-edit" onclick="editNotes(${row.id})">Edit</button>
+                                <button class="btn-danger" onclick="deleteRow(${row.id})">Del</button>
+                            </td>
+                        </tr>
+                    `;
+                });
+            }
+
+            tableHTML += `</tbody></table></div>`;
+            displayArea.innerHTML += headingHTML + tableHTML;
+        });
+    }
+
+    function addHeading() {
+        const input = document.getElementById('new-heading-input');
+        const headingName = input.value.trim();
+        if (!headingName) return alert('Enter a heading name.');
+        if (vocabularyData.headings.includes(headingName)) return alert('Heading exists.');
+
+        vocabularyData.headings.push(headingName);
+        input.value = '';
+        renderWebsite();
+    }
+
+    function addRow() {
+        const heading = document.getElementById('heading-select').value;
+        const deutsch = document.getElementById('deutsch-input').value.trim();
+        const english = document.getElementById('english-input').value.trim();
+        const notes = document.getElementById('notes-input').value.trim();
+        const audioPath = document.getElementById('audio-input').value.trim();
+
+        if (!heading || !deutsch || !english) return alert('Heading, Deutsch, and English fields are mandatory.');
+
+        vocabularyData.rows.push({
+            id: Date.now(),
+            heading: heading,
+            deutsch: deutsch,
+            english: english,
+            notes: notes,
+            audio: audioPath
+        });
+
+        document.getElementById('deutsch-input').value = '';
+        document.getElementById('english-input').value = '';
+        document.getElementById('notes-input').value = '';
+        document.getElementById('audio-input').value = '';
+        renderWebsite();
+    }
+
+    function editNotes(id) {
+        const row = vocabularyData.rows.find(r => r.id === id);
+        const newNotes = prompt("Edit Notes:", row.notes);
+        if (newNotes !== null) {
+            row.notes = newNotes.trim();
+            renderWebsite();
+        }
+    }
+
+    function deleteRow(id) {
+        if(confirm('Delete this row?')) {
+            vocabularyData.rows = vocabularyData.rows.filter(row => row.id !== id);
+            renderWebsite();
+        }
+    }
+
+    // Exports modified configuration block to user downloads track
+    function downloadJSON() {
+        const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(vocabularyData, null, 2));
+        const downloadAnchor = document.createElement('a');
+        downloadAnchor.setAttribute("href", dataStr);
+        downloadAnchor.setAttribute("download", "data.json");
+        document.body.appendChild(downloadAnchor);
+        downloadAnchor.click();
+        downloadAnchor.remove();
+    }
+
+    // Run Engine Initializer
+    loadData();
+</script>
 
 </body>
 </html>
