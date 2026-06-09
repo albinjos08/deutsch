@@ -10,6 +10,14 @@
       "english": "Hello",
       "notes": "Casual greeting, used anytime.",
       "audio": "audio/hallo.mp3"
+    },
+    {
+      "id": 1781027567449,
+      "heading": "Greetings",
+      "deutsch": "Guten Morgen",
+      "english": "Good Morning",
+      "notes": "",
+      "audio": "audio/guten_morgen"
     }
   ]
 }
