@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Deutsch</title>
+    <style>
+        :root {
+            --bg-color: #f9f9fb;
+            --text-color: #333;
+            --primary-color: #0066cc;
+            --table-bg: #ffffff;
+            --border-color: #e1e4e8;
+            --header-bg: #f1f3f5;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #111;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px;
+            margin-top: 40px;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            background: var(--table-bg);
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: var(--header-bg);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Column widths */
+        th:nth-child(1), td:nth-child(1) { width: 25%; font-weight: bold; }
+        th:nth-child(2), td:nth-child(2) { width: 20%; }
+        th:nth-child(3), td:nth-child(3) { width: 25%; }
+        th:nth-child(4), td:nth-child(4) { width: 30%; color: #666; font-size: 0.95rem; }
+
+        audio {
+            max-width: 100%;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Mein Deutsch-Lernportal</h1>
+
+    <!-- SECTION: GREETINGS -->
+    <h2>Greetings</h2>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Deutsch</th>
+                    <th>Audio</th>
+                    <th>English</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hallo</td>
+                    <td>
+                        <audio controls src="audio/hallo.mp3">
+                            Your browser does not support audio.
+                        </audio>
+                    </td>
+                    <td>Hello</td>
+                    <td>Casual greeting, used anytime.</td>
+                </tr>
+                <tr>
+                    <td>Guten Morgen</td>
+                    <td>
+                        <audio controls src="audio/guten_morgen.mp3">
+                            Your browser does not support audio.
+                        </audio>
+                    </td>
+                    <td>Good morning</td>
+                    <td>Used generally until 11 AM.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- SECTION: ESSENTIALS (Example of how to add more headings) -->
+    <h2>Essential Phrases</h2>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Deutsch</th>
+                    <th>Audio</th>
+                    <th>English</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bitte</td>
+                    <td>
+                        <audio controls src="audio/bitte.mp3">
+                            Your browser does not support audio.
+                        </audio>
+                    </td>
+                    <td>Please / You're welcome</td>
+                    <td>Context-dependent; versatile word.</td>
+                </tr>
+                <tr>
+                    <td>Danke</td>
+                    <td>
+                        <audio controls src="audio/danke.mp3">
+                            Your browser does not support audio.
+                        </audio>
+                    </td>
+                    <td>Thank you</td>
+                    <td>Can be shortened to "Danke sehr" for emphasis.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+</body>
+</html>
