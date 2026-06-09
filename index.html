@@ -122,10 +122,7 @@
                 <label for="deutsch-input">Deutsch</label>
                 <input type="text" id="deutsch-input" placeholder="e.g., Danke">
             </div>
-            <div class="form-group">
-                <label for="audio-input">Audio File Path</label>
-                <input type="text" id="audio-input" placeholder="e.g., audio/danke.mp3">
-            </div>
+
             <div class="form-group">
                 <label for="english-input">English</label>
                 <input type="text" id="english-input" placeholder="e.g., Thank you">
@@ -229,14 +226,16 @@
         renderWebsite();
     }
 
-    function addRow() {
+function addRow() {
         const heading = document.getElementById('heading-select').value;
         const deutsch = document.getElementById('deutsch-input').value.trim();
         const english = document.getElementById('english-input').value.trim();
         const notes = document.getElementById('notes-input').value.trim();
-        const audioPath = document.getElementById('audio-input').value.trim();
 
         if (!heading || !deutsch || !english) return alert('Heading, Deutsch, and English fields are mandatory.');
+
+        // Automatically sets the path to audio/Word.mp3 based on your exact input casing
+        const autoAudioPath = `audio/${deutsch}.mp3`;
 
         vocabularyData.rows.push({
             id: Date.now(),
@@ -244,13 +243,13 @@
             deutsch: deutsch,
             english: english,
             notes: notes,
-            audio: audioPath
+            audio: autoAudioPath
         });
 
+        // Clear input boxes
         document.getElementById('deutsch-input').value = '';
         document.getElementById('english-input').value = '';
         document.getElementById('notes-input').value = '';
-        document.getElementById('audio-input').value = '';
         renderWebsite();
     }
 
