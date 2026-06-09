@@ -202,9 +202,15 @@
                             <td>${row.english}</td>
                             <td>${row.notes || '-'}</td>
                             <td style="text-align:center;">
+
+                                <!-- EDIT CONTROLS LOCKED
                                 <button class="btn-danger" onclick="editWord(${row.id})">Edit Word</button>
+                                -->
                                 <button class="btn-edit" onclick="editNotes(${row.id})">Edit Notes</button>
+                                <!-- EDIT CONTROLS LOCKED
                                 <button class="btn-danger" onclick="deleteRow(${row.id})">Delete</button>
+                                -->
+                                
                             </td>
                         </tr>
                     `;
