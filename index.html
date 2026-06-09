@@ -130,9 +130,11 @@
     let vocabularyData = { headings: [], rows: [] };
 
     // Fetch the production database file from GitHub
+// Fetch the production database file from GitHub (with cache busting)
     async function loadData() {
         try {
-            const response = await fetch('data.json');
+            // Adding a unique timestamp (?t=...) forces the browser to bypass the cache
+            const response = await fetch('data.json?t=' + Date.now());
             if (!response.ok) throw new Error('Could not find data.json');
             vocabularyData = await response.json();
             renderWebsite();
