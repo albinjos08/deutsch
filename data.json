@@ -1,0 +1,15 @@
+{
+  "headings": [
+    "Greetings"
+  ],
+  "rows": [
+    {
+      "id": 1,
+      "heading": "Greetings",
+      "deutsch": "Hallo",
+      "english": "Hello",
+      "notes": "Casual greeting, used anytime.",
+      "audio": "audio/hallo.mp3"
+    }
+  ]
+}
