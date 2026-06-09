@@ -198,9 +198,11 @@
         const deutsch = document.getElementById('deutsch-input').value.trim();
         const english = document.getElementById('english-input').value.trim();
         const notes = document.getElementById('notes-input').value.trim();
-        const audioPath = document.getElementById('audio-input').value.trim();
 
         if (!heading || !deutsch || !english) return alert('Heading, Deutsch, and English fields are mandatory.');
+
+        // Automatically generates path based on the German word entered (e.g., audio/Danke.mp3)
+        const autoAudioPath = `audio/${deutsch}.mp3`;
 
         vocabularyData.rows.push({
             id: Date.now(),
@@ -208,13 +210,13 @@
             deutsch: deutsch,
             english: english,
             notes: notes,
-            audio: audioPath
+            audio: autoAudioPath
         });
 
+        // Clear input boxes
         document.getElementById('deutsch-input').value = '';
         document.getElementById('english-input').value = '';
         document.getElementById('notes-input').value = '';
-        document.getElementById('audio-input').value = '';
         renderWebsite();
     }
 
