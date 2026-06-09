@@ -235,6 +235,7 @@ function addRow() {
         if (!heading || !deutsch || !english) return alert('Heading, Deutsch, and English fields are mandatory.');
 
         // Automatically sets the path to audio/Word.mp3 based on your exact input casing
+        const cleanedDeutsch = deutsch.replace(/\?/g, '');
         const autoAudioPath = `audio/${deutsch}.mp3`;
 
         vocabularyData.rows.push({
