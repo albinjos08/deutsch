@@ -1,7 +1,8 @@
 {
   "headings": [
     "Greetings",
-    "Polite Expressions"
+    "Polite Expressions",
+    "Self intro and Basic conversation"
   ],
   "rows": [
     {
@@ -107,6 +108,86 @@
       "english": "Sorry",
       "notes": "",
       "audio": "audio/Es tut mir leid.mp3"
+    },
+    {
+      "id": 1781034895315,
+      "heading": "Self intro and Basic conversation",
+      "deutsch": "Ich heiße Albin",
+      "english": "My name is Albin",
+      "notes": "formal",
+      "audio": "audio/Ich heiße Albin.mp3"
+    },
+    {
+      "id": 1781034954013,
+      "heading": "Self intro and Basic conversation",
+      "deutsch": "Ich bin Albin",
+      "english": "I am Albin",
+      "notes": "casual",
+      "audio": "audio/Ich bin Albin.mp3"
+    },
+    {
+      "id": 1781035040522,
+      "heading": "Self intro and Basic conversation",
+      "deutsch": "Ich wohne in Kanada",
+      "english": "I live in Canada",
+      "notes": "",
+      "audio": "audio/Ich wohne in Kanada.mp3"
+    },
+    {
+      "id": 1781035079817,
+      "heading": "Self intro and Basic conversation",
+      "deutsch": "Ich komme aus Indien",
+      "english": "I come from India",
+      "notes": "",
+      "audio": "audio/Ich komme aus Indien.mp3"
+    },
+    {
+      "id": 1781035111474,
+      "heading": "Self intro and Basic conversation",
+      "deutsch": "Ich lerne Deutsch",
+      "english": "I am learning German",
+      "notes": "",
+      "audio": "audio/Ich lerne Deutsch.mp3"
+    },
+    {
+      "id": 1781035200001,
+      "heading": "Self intro and Basic conversation",
+      "deutsch": "Wie heißen Sie?",
+      "english": "What is your name?",
+      "notes": "",
+      "audio": "audio/Wie heißen Sie?.mp3"
+    },
+    {
+      "id": 1781035226704,
+      "heading": "Self intro and Basic conversation",
+      "deutsch": "Woher kommen Sie?",
+      "english": "Where are you from?",
+      "notes": "",
+      "audio": "audio/Woher kommen Sie?.mp3"
+    },
+    {
+      "id": 1781035243471,
+      "heading": "Self intro and Basic conversation",
+      "deutsch": "Wo wohnen Sie?",
+      "english": "Where do you live?",
+      "notes": "",
+      "audio": "audio/Wo wohnen Sie?.mp3"
+    },
+    {
+      "id": 1781035311730,
+      "heading": "Self intro and Basic conversation",
+      "deutsch": "Wie geht es dir?",
+      "english": "How are you?",
+      "notes": "",
+      "audio": "audio/Wie geht es dir?.mp3"
+    },
+    {
+      "id": 1781035344873,
+      "heading": "Self intro and Basic conversation",
+      "deutsch": "Mir geht es gut",
+      "english": "I am fine",
+      "notes": "",
+      "audio": "audio/Mir geht es gut.mp3"
     }
   ]
 }
