@@ -12,12 +12,60 @@
       "audio": "audio/hallo.mp3"
     },
     {
-      "id": 1781027567449,
+      "id": 1781027878275,
+      "heading": "Greetings",
+      "deutsch": "Guten Tag",
+      "english": "Good Day",
+      "notes": "",
+      "audio": "audio/guten_tag.mp3"
+    },
+    {
+      "id": 1781027939774,
       "heading": "Greetings",
       "deutsch": "Guten Morgen",
       "english": "Good Morning",
       "notes": "",
-      "audio": "audio/guten_morgen"
+      "audio": "audio/guten_morgen.mp3"
+    },
+    {
+      "id": 1781028033772,
+      "heading": "Greetings",
+      "deutsch": "Guten Abend",
+      "english": "Good Evening",
+      "notes": "",
+      "audio": "audio/Guten Abend.mp3"
+    },
+    {
+      "id": 1781028145231,
+      "heading": "Greetings",
+      "deutsch": "Gute Nacht",
+      "english": "Good Night",
+      "notes": "",
+      "audio": "audio/Gute Nacht.mp3"
+    },
+    {
+      "id": 1781028200644,
+      "heading": "Greetings",
+      "deutsch": "Tschüss",
+      "english": "Bye",
+      "notes": "",
+      "audio": "audio/Tschüss.mp3"
+    },
+    {
+      "id": 1781028260411,
+      "heading": "Greetings",
+      "deutsch": "Auf Wiedersehen",
+      "english": "Goodbye",
+      "notes": "",
+      "audio": "audio/Auf Wiedersehen.mp3"
+    },
+    {
+      "id": 1781028361428,
+      "heading": "Greetings",
+      "deutsch": "Bis später",
+      "english": "See you later",
+      "notes": "",
+      "audio": "audio/Bis später.mp3"
     }
   ]
 }
