@@ -2,7 +2,13 @@
   "headings": [
     "Greetings",
     "Polite Expressions",
-    "Self intro and Basic conversation"
+    "Self intro and Basic conversation",
+    "Personal Pronouns",
+    "The Two Most Important Verbs",
+    "The Two Most Important Verbs 2",
+    "German Sentence Structure: Subject + Verb + Object",
+    "German Articles: Every noun has a gender",
+    "Question Words"
   ],
   "rows": [
     {
@@ -118,11 +124,19 @@
       "audio": "audio/Wie heißen Sie.mp3"
     },
     {
+      "id": 1781050824798,
+      "heading": "Self intro and Basic conversation",
+      "deutsch": "Mein Name ist Albin Jose",
+      "english": "My name is Albin Jose",
+      "notes": "formal",
+      "audio": "audio/Mein Name ist Albin Jose.mp3"
+    },
+    {
       "id": 1781034895315,
       "heading": "Self intro and Basic conversation",
       "deutsch": "Ich heiße Albin",
       "english": "My name is Albin",
-      "notes": "formal",
+      "notes": "",
       "audio": "audio/Ich heiße Albin.mp3"
     },
     {
@@ -188,6 +202,406 @@
       "english": "I am learning German",
       "notes": "",
       "audio": "audio/Ich lerne Deutsch.mp3"
+    },
+    {
+      "id": 1781051135027,
+      "heading": "Personal Pronouns",
+      "deutsch": "ich",
+      "english": "I",
+      "notes": "",
+      "audio": "audio/ich.mp3"
+    },
+    {
+      "id": 1781051151535,
+      "heading": "Personal Pronouns",
+      "deutsch": "du",
+      "english": "you",
+      "notes": "",
+      "audio": "audio/du.mp3"
+    },
+    {
+      "id": 1781051167948,
+      "heading": "Personal Pronouns",
+      "deutsch": "er",
+      "english": "he",
+      "notes": "",
+      "audio": "audio/er.mp3"
+    },
+    {
+      "id": 1781051182957,
+      "heading": "Personal Pronouns",
+      "deutsch": "sie",
+      "english": "she",
+      "notes": "",
+      "audio": "audio/sie.mp3"
+    },
+    {
+      "id": 1781051201126,
+      "heading": "Personal Pronouns",
+      "deutsch": "es",
+      "english": "it",
+      "notes": "",
+      "audio": "audio/es.mp3"
+    },
+    {
+      "id": 1781051231345,
+      "heading": "Personal Pronouns",
+      "deutsch": "sie",
+      "english": "they",
+      "notes": "",
+      "audio": "audio/sie.mp3"
+    },
+    {
+      "id": 1781051250003,
+      "heading": "Personal Pronouns",
+      "deutsch": "Sie",
+      "english": "formal you",
+      "notes": "",
+      "audio": "audio/Sie.mp3"
+    },
+    {
+      "id": 1781051272194,
+      "heading": "Personal Pronouns",
+      "deutsch": "wir",
+      "english": "we",
+      "notes": "",
+      "audio": "audio/wir.mp3"
+    },
+    {
+      "id": 1781051289299,
+      "heading": "Personal Pronouns",
+      "deutsch": "ihr",
+      "english": "you all",
+      "notes": "",
+      "audio": "audio/ihr.mp3"
+    },
+    {
+      "id": 1781051407103,
+      "heading": "The Two Most Important Verbs",
+      "deutsch": "sein",
+      "english": "to be",
+      "notes": "",
+      "audio": "audio/sein.mp3"
+    },
+    {
+      "id": 1781051960024,
+      "heading": "The Two Most Important Verbs",
+      "deutsch": "ich bin",
+      "english": "I am",
+      "notes": "",
+      "audio": "audio/ich bin.mp3"
+    },
+    {
+      "id": 1781051973812,
+      "heading": "The Two Most Important Verbs",
+      "deutsch": "du bist",
+      "english": "you are",
+      "notes": "",
+      "audio": "audio/du bist.mp3"
+    },
+    {
+      "id": 1781051987614,
+      "heading": "The Two Most Important Verbs",
+      "deutsch": "er ist",
+      "english": "he is",
+      "notes": "",
+      "audio": "audio/er ist.mp3"
+    },
+    {
+      "id": 1781052008970,
+      "heading": "The Two Most Important Verbs",
+      "deutsch": "sie ist",
+      "english": "she is",
+      "notes": "",
+      "audio": "audio/sie ist.mp3"
+    },
+    {
+      "id": 1781052026619,
+      "heading": "The Two Most Important Verbs",
+      "deutsch": "wir sind",
+      "english": "we are",
+      "notes": "",
+      "audio": "audio/wir sind.mp3"
+    },
+    {
+      "id": 1781052039064,
+      "heading": "The Two Most Important Verbs",
+      "deutsch": "ihr seid",
+      "english": "you are",
+      "notes": "",
+      "audio": "audio/ihr seid.mp3"
+    },
+    {
+      "id": 1781052054319,
+      "heading": "The Two Most Important Verbs",
+      "deutsch": "sie sind",
+      "english": "they are",
+      "notes": "",
+      "audio": "audio/sie sind.mp3"
+    },
+    {
+      "id": 1781052132537,
+      "heading": "The Two Most Important Verbs",
+      "deutsch": "Ich bin Student",
+      "english": "I am a student",
+      "notes": "eg 1",
+      "audio": "audio/Ich bin Student.mp3"
+    },
+    {
+      "id": 1781052171210,
+      "heading": "The Two Most Important Verbs",
+      "deutsch": "Ich bin müde",
+      "english": "I am tired",
+      "notes": "eg 2",
+      "audio": "audio/Ich bin müde.mp3"
+    },
+    {
+      "id": 1781052370182,
+      "heading": "The Two Most Important Verbs 2",
+      "deutsch": "haben",
+      "english": "to have",
+      "notes": "",
+      "audio": "audio/haben.mp3"
+    },
+    {
+      "id": 1781052396756,
+      "heading": "The Two Most Important Verbs 2",
+      "deutsch": "ich habe",
+      "english": "I have",
+      "notes": "",
+      "audio": "audio/ich habe.mp3"
+    },
+    {
+      "id": 1781052414568,
+      "heading": "The Two Most Important Verbs 2",
+      "deutsch": "du hast",
+      "english": "you have",
+      "notes": "",
+      "audio": "audio/du hast.mp3"
+    },
+    {
+      "id": 1781052433819,
+      "heading": "The Two Most Important Verbs 2",
+      "deutsch": "er hat",
+      "english": "he has",
+      "notes": "",
+      "audio": "audio/er hat.mp3"
+    },
+    {
+      "id": 1781052455343,
+      "heading": "The Two Most Important Verbs 2",
+      "deutsch": "wir haben",
+      "english": "we have",
+      "notes": "",
+      "audio": "audio/wir haben.mp3"
+    },
+    {
+      "id": 1781052474104,
+      "heading": "The Two Most Important Verbs 2",
+      "deutsch": "ihr habt",
+      "english": "you have",
+      "notes": "",
+      "audio": "audio/ihr habt.mp3"
+    },
+    {
+      "id": 1781052490116,
+      "heading": "The Two Most Important Verbs 2",
+      "deutsch": "sie haben",
+      "english": "they have",
+      "notes": "",
+      "audio": "audio/sie haben.mp3"
+    },
+    {
+      "id": 1781052525891,
+      "heading": "The Two Most Important Verbs 2",
+      "deutsch": "Ich habe ein Auto",
+      "english": "I have a car",
+      "notes": "eg 1",
+      "audio": "audio/Ich habe ein Auto.mp3"
+    },
+    {
+      "id": 1781052556027,
+      "heading": "The Two Most Important Verbs 2",
+      "deutsch": "Ich habe Hunger",
+      "english": "I'm hungry",
+      "notes": "eg 2",
+      "audio": "audio/Ich habe Hunger.mp3"
+    },
+    {
+      "id": 1781052670638,
+      "heading": "German Sentence Structure: Subject + Verb + Object",
+      "deutsch": "Ich lerne Deutsch",
+      "english": "I'm learning German",
+      "notes": "",
+      "audio": "audio/Ich lerne Deutsch.mp3"
+    },
+    {
+      "id": 1781052731399,
+      "heading": "German Sentence Structure: Subject + Verb + Object",
+      "deutsch": "Du sprichst Englisch",
+      "english": "You speak English",
+      "notes": "",
+      "audio": "audio/Du sprichst Englisch.mp3"
+    },
+    {
+      "id": 1781052775023,
+      "heading": "German Sentence Structure: Subject + Verb + Object",
+      "deutsch": "Wir wohnen in Kanada",
+      "english": "We live in Canada",
+      "notes": "",
+      "audio": "audio/Wir wohnen in Kanada.mp3"
+    },
+    {
+      "id": 1781052837747,
+      "heading": "German Articles: Every noun has a gender",
+      "deutsch": "der",
+      "english": "masculine",
+      "notes": "",
+      "audio": "audio/der.mp3"
+    },
+    {
+      "id": 1781052851134,
+      "heading": "German Articles: Every noun has a gender",
+      "deutsch": "die",
+      "english": "feminine",
+      "notes": "",
+      "audio": "audio/die.mp3"
+    },
+    {
+      "id": 1781052933835,
+      "heading": "German Articles: Every noun has a gender",
+      "deutsch": "das",
+      "english": "neutral",
+      "notes": "",
+      "audio": "audio/das.mp3"
+    },
+    {
+      "id": 1781053004156,
+      "heading": "German Articles: Every noun has a gender",
+      "deutsch": "feminin",
+      "english": "feminine",
+      "notes": "",
+      "audio": "audio/feminin.mp3"
+    },
+    {
+      "id": 1781053048407,
+      "heading": "German Articles: Every noun has a gender",
+      "deutsch": "masculine",
+      "english": "männlich",
+      "notes": "",
+      "audio": "audio/masculine.mp3"
+    },
+    {
+      "id": 1781053070041,
+      "heading": "German Articles: Every noun has a gender",
+      "deutsch": "neuter",
+      "english": "neutral",
+      "notes": "",
+      "audio": "audio/neuter.mp3"
+    },
+    {
+      "id": 1781053097529,
+      "heading": "German Articles: Every noun has a gender",
+      "deutsch": "der Mann",
+      "english": "man",
+      "notes": "",
+      "audio": "audio/der Mann.mp3"
+    },
+    {
+      "id": 1781053113829,
+      "heading": "German Articles: Every noun has a gender",
+      "deutsch": "die Frau",
+      "english": "woman",
+      "notes": "",
+      "audio": "audio/die Frau.mp3"
+    },
+    {
+      "id": 1781053126116,
+      "heading": "German Articles: Every noun has a gender",
+      "deutsch": "das Kind",
+      "english": "child",
+      "notes": "",
+      "audio": "audio/das Kind.mp3"
+    },
+    {
+      "id": 1781053181914,
+      "heading": "Question Words",
+      "deutsch": "Wer",
+      "english": "Who",
+      "notes": "",
+      "audio": "audio/Wer.mp3"
+    },
+    {
+      "id": 1781053201702,
+      "heading": "Question Words",
+      "deutsch": "Was",
+      "english": "What",
+      "notes": "",
+      "audio": "audio/Was.mp3"
+    },
+    {
+      "id": 1781053220026,
+      "heading": "Question Words",
+      "deutsch": "Wann",
+      "english": "When",
+      "notes": "",
+      "audio": "audio/Wann.mp3"
+    },
+    {
+      "id": 1781053241051,
+      "heading": "Question Words",
+      "deutsch": "Wo",
+      "english": "Where",
+      "notes": "",
+      "audio": "audio/Wo.mp3"
+    },
+    {
+      "id": 1781053255138,
+      "heading": "Question Words",
+      "deutsch": "Warum",
+      "english": "Why",
+      "notes": "",
+      "audio": "audio/Warum.mp3"
+    },
+    {
+      "id": 1781053272100,
+      "heading": "Question Words",
+      "deutsch": "Wie",
+      "english": "How",
+      "notes": "",
+      "audio": "audio/Wie.mp3"
+    },
+    {
+      "id": 1781053289613,
+      "heading": "Question Words",
+      "deutsch": "Welcher",
+      "english": "Which",
+      "notes": "",
+      "audio": "audio/Welcher.mp3"
+    },
+    {
+      "id": 1781053334811,
+      "heading": "Question Words",
+      "deutsch": "Wie heißt du",
+      "english": "What's your name",
+      "notes": "",
+      "audio": "audio/Wie heißt du.mp3"
+    },
+    {
+      "id": 1781053374586,
+      "heading": "Question Words",
+      "deutsch": "Wo wohnst du?",
+      "english": "Where do you live?",
+      "notes": "",
+      "audio": "audio/Wo wohnst du?.mp3"
+    },
+    {
+      "id": 1781053398372,
+      "heading": "Question Words",
+      "deutsch": "Warum lernst du Deutsch?",
+      "english": "Why are you learning German?",
+      "notes": "",
+      "audio": "audio/Warum lernst du Deutsch?.mp3"
     }
   ]
 }
